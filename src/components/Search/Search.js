@@ -14,18 +14,19 @@ const Search = ({ searchHandler }) => {
           setSearchText(e.target.value);
         }}
       />
-
-      <button
-        type="submit"
-        onClick={() => searchHandler(searchText)}
-        className="button"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Submit
-      </button>
+      <span>
+        <button
+          type="submit"
+          onClick={() => searchHandler(searchText)}
+          className="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
+      </span>
     </div>
   );
 };
