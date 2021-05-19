@@ -1,25 +1,31 @@
 import React, { useState } from "react";
-import Results from "./Results";
+import "./Search.css";
 
 const Search = ({ searchHandler }) => {
   const [searchText, setSearchText] = useState("");
 
   return (
-    <div>
+    <div className="wrapper">
       <input
         type="text"
         value={searchText}
-        placeholder="Login"
+        placeholder="Enter Login Data"
         onChange={(e) => {
           setSearchText(e.target.value);
         }}
       />
 
-      <span>
-        <button type="submit" onClick={() => searchHandler(searchText)}>
-          Submit
-        </button>
-      </span>
+      <button
+        type="submit"
+        onClick={() => searchHandler(searchText)}
+        className="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </button>
     </div>
   );
 };

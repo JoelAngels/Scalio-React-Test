@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Results from "./components/Results";
 import Search from "./components/Search";
@@ -9,30 +9,21 @@ function App() {
   const ListLoading = listLoading(Results);
   const [repoList, setRepoList] = useState({});
 
-  // create a function that expects a string argument, that then concatinates 3 strings into one url string.
-
-  // replace the 2nd string with search term
-  const searchHandler = (searchText) => {
-    axios.get(urlBuilder(searchText)).then((repos) => {
-      setRepoList(repos.data);
-    });
-  };
-  // make a request using the newly created url.
   const urlBuilder = (user) => {
     const url = `https://api.github.com/search/users?q=${user}%20in:login`;
     return url;
   };
 
-  // useEffect(() => {
-  //   const apiUrl = `https://api.github.com/search/users?q=foo%20in:login`;
-  //   axios.get(urlBuilder("foo")).then((repos) => {
-  //     setRepoList(repos.data);
-  //   });
-  // }, [setRepoList]);
+  const searchHandler = (searchText) => {
+    axios.get(urlBuilder(searchText)).then((repos) => {
+      setRepoList(repos.data);
+    });
+  };
+
   return (
     <div className="App">
       <div className="container">
-        <h1>My Repositories</h1>
+        <h1>Search for Repositories</h1>
       </div>
       <div className="repo-container">
         <Search searchHandler={searchHandler} />
@@ -60,3 +51,10 @@ Underneath the table
 Change the page number in the url string to match the page number in the material ui pagination component
 array.sort based on userName
 */
+
+// useEffect(() => {
+//   const apiUrl = `https://api.github.com/search/users?q=foo%20in:login`;
+//   axios.get(urlBuilder("foo")).then((repos) => {
+//     setRepoList(repos.data);
+//   });
+// }, [setRepoList]);
