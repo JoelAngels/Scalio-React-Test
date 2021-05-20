@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -8,6 +8,8 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import TablePagination from "@material-ui/core/TablePagination";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./Results.css";
 
 const StyledTableCell = withStyles((theme) => ({
@@ -37,6 +39,9 @@ const useStyles = makeStyles({
 });
 
 const Results = (props) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
   const { repos } = props;
   const classes = useStyles();
   const [page, setPage] = useState(0);
@@ -63,12 +68,18 @@ const Results = (props) => {
 
   return (
     <Fragment>
-      <TableContainer component={Paper} className="table">
+      <TableContainer component={Paper} className="table" data-aos="fade-right">
         <Table className={classes.table} aria-label="customized table">
           <TableHead>
             <TableRow>
               <StyledTableCell>Avatar</StyledTableCell>
-              <StyledTableCell align="left">Login</StyledTableCell>
+              <StyledTableCell
+                align="left"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                Login
+              </StyledTableCell>
               <StyledTableCell align="left">Type</StyledTableCell>
             </TableRow>
           </TableHead>
@@ -86,8 +97,12 @@ const Results = (props) => {
                     <StyledTableCell component="th" scope="row">
                       <img src={repo.avatar_url} alt="repo" className="image" />
                     </StyledTableCell>
-                    <StyledTableCell align="left">{repo.login}</StyledTableCell>
-                    <StyledTableCell align="left">{repo.type}</StyledTableCell>
+                    <StyledTableCell align="left" className="data">
+                      {repo.login}
+                    </StyledTableCell>
+                    <StyledTableCell align="left" className="data">
+                      {repo.type}
+                    </StyledTableCell>
                   </StyledTableRow>
                 );
               })}
