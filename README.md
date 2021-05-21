@@ -50,7 +50,7 @@ Copyright (©) [2021] [JoelAngel]
 
 ## Author Info
 
-- LinkedIn - [linkedIn](https://www.linkedin.com/in/joel-angel-4b05141a3/)
+- LinkedIn - [linkedIn](https://www.linkedin.com/in/joel-angel-/)
 - Website - [JoelAngel](https://joelangel.web.app)
 
 [Back To The Top](#Scalio-Application)
