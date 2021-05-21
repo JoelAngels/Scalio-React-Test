@@ -8,7 +8,7 @@ Here are sections headers that will be used to reference location of destination
 
 - [Description](#description)
 - [How To Use](#how-to-use)
-- [References](#references)
+- [License](#License)
 - [Author Info](#author-info)
 
 ---
