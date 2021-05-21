@@ -45,7 +45,7 @@ Before you judge my code, CTO(Micah Lucas) and PWE(Mike lgnatev), PM (Nikita Iva
 Copyright (©) [2021] [JoelAngel]
 
 The Api endpoint, I found one that supported pagination but I tried finding a way on how I could connect it to material ui Table, but It wasn't that successful, 
-What I would have done better was to allow the api endpoint to try and get the data sorted.
+What I would have done better was to allow the api endpoint to try and get the data sorted. It was a wonderful experience regardless.
 
 [Back To The Top](#Scalio-Application)
 
