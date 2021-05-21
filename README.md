@@ -8,7 +8,7 @@ Here are sections headers that will be used to reference location of destination
 
 - [Description](#description)
 - [How To Use](#how-to-use)
-- [License](#License)
+- [Pseudocode](#Pseudocode)
 - [Author Info](#author-info)
 
 ---
@@ -40,9 +40,12 @@ Before you judge my code, CTO(Micah Lucas) and PWE(Mike lgnatev), PM (Nikita Iva
 
 ---
 
-## License
+## Pseudocode
 
 Copyright (©) [2021] [JoelAngel]
+
+The Api endpoint, I found one that supported pagination but I tried finding a way on how I could connect it to material ui Table, but It wasn't that successful, 
+What I would have done better was to allow the api endpoint to try and get the data sorted.
 
 [Back To The Top](#Scalio-Application)
 
