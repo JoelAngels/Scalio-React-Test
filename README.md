@@ -15,7 +15,7 @@ Here are sections headers that will be used to reference location of destination
 
 ## Description
 
-Before you judge my code, CTO(Micah Lucas) and PWE(Mike lgnatev) I wanted to say that I really did my best with the coding question, It wasn't easy as it pushed me to learn something new, but regardless thank you for checking out my code, this was a learning process and I believe also at the job as well it is a learning process as well and I really like what the company is initiating. I Built this Scalio React App that uses the API endpoint that was given to me. I built my own custom search engine that displayed the results on the login info. This Project also used the Official Google Design Library, Material UI for the Table UI.
+Before you judge my code, CTO(Micah Lucas) and PWE(Mike lgnatev) I wanted to say that I really did my best with the coding question, It wasn't easy as it pushed me to learn something new, but regardless thank you for checking out my code, this was a learning process and I believe as well at the job as well it is a learning process. I really like what the company is initiating and how it solves problems.Apart from that I Built this Scalio React App that uses the API endpoint that was given to me. I built my own custom search engine that displayed the results oF the login info to the Table. This Project also used the Official Google Design Library, Material UI for the Table UI.
 
 #### Technologies
 
