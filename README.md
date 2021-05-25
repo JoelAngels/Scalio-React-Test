@@ -35,6 +35,7 @@ Before you judge my code, CTO(Micah Lucas) and PWE(Mike lgnatev), PM (Nikita Iva
 
 - To get the project starting, First run `npm install`, to install the dependencies
 - if it brings an error, delete the `Node_modules` folder and run `npm install` again and the project should start at `https://localhost:3000`
+- Now you can run `npm start` to launch the application
 
 [Back To The Top](#Scalio-Application)
 
